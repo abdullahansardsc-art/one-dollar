@@ -148,6 +148,7 @@
         </div>
     </section>
 
+    <!-- SMOKE TEST MODAL -->
     <div id="emailModal" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
@@ -157,13 +158,15 @@
                 <p>We are currently assembling our next batch of wooden racks. We fill orders on a first-come, first-served basis.</p>
                 <p class="promo">Join the waitlist for the <strong>Rs. 300</strong> rack and get <strong>Free Delivery</strong> on your first order.</p>
                 <form id="preorderForm">
-                    <input type="email" id="userEmail" placeholder="Enter your email" required>
+                    <!-- Added name="email" below -->
+                    <input type="email" id="userEmail" name="email" placeholder="Enter your email" required>
                     <button type="submit" class="btn-submit">Secure My Spot</button>
                 </form>
             </div>
         </div>
     </div>
 
+    <!-- FOOTER -->
     <footer>
         <div class="container">
             <div class="footer-wrap">
@@ -173,8 +176,9 @@
                 </div>
                 <div class="newsletter">
                     <p>Get updates on new designs:</p>
-                    <form id="footerForm">
-                        <input type="email" placeholder="Email Address" required>
+                    <form id="footerForm" class="footer-inline-form">
+                        <!-- Added name="email" below -->
+                        <input type="email" name="email" placeholder="Email Address" required>
                         <button type="submit">Join</button>
                     </form>
                 </div>
